@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amor de Gato</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f53d2d;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.grider {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 20px;
+    padding: 80px 20px 60px; /* Espaço para header e footer */
+}
+
+.box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #f53d2d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d4351c;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f53d2d;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 300px) and (max-width: 399px) {
+    .grider {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 400px) and (max-width: 499px) {
+    .grider {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+    .grider {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 600px) and (max-width: 699px) {
+    .grider {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 700px) and (max-width: 799px) {
+    .grider {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+    .grider {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Amor de Gato</h1>
+    </header>
+
+    <div class="grider">
+        <div class="box">
+            <img src="https://via.placeholder.com/150" alt="Produto 1">
+            <p>Descrição do Produto 1</p>
+            <a href="https://shopee.com.br/produto1" class="btn">Ver Produto</a>
+        </div>
+        <div class="box">
+            <img src="https://via.placeholder.com/150" alt="Produto 2">
+            <p>Descrição do Produto 2</p>
+            <a href="https://shopee.com.br/produto2" class="btn">Ver Produto</a>
+        </div>
+        <div class="box">
+            <img src="https://via.placeholder.com/150" alt="Produto 3">
+            <p>Descrição do Produto 3</p>
+            <a href="https://shopee.com.br/produto3" class="btn">Ver Produto</a>
+        </div><div class="box">
+            <img src="https://via.placeholder.com/150" alt="Produto 1">
+            <p>Descrição do Produto 1</p>
+            <a href="https://shopee.com.br/produto1" class="btn">Ver Produto</a>
+        </div>
+        <div class="box">
+            <img src="https://via.placeholder.com/150" alt="Produto 2">
+            <p>Descrição do Produto 2</p>
+            <a href="https://shopee.com.br/produto2" class="btn">Ver Produto</a>
+        </div>
+        <div class="box">
+            <img src="https://via.placeholder.com/150" alt="Produto 3">
+            <p>Descrição do Produto 3</p>
+            <a href="https://shopee.com.br/produto3" class="btn">Ver Produto</a>
+        </div><div class="box">
+            <img src="https://via.placeholder.com/150" alt="Produto 1">
+            <p>Descrição do Produto 1</p>
+            <a href="https://shopee.com.br/produto1" class="btn">Ver Produto</a>
+        </div>
+        <div class="box">
+            <img src="https://via.placeholder.com/150" alt="Produto 2">
+            <p>Descrição do Produto 2</p>
+            <a href="https://shopee.com.br/produto2" class="btn">Ver Produto</a>
+        </div>
+        <div class="box">
+            <img src="https://via.placeholder.com/150" alt="Produto 3">
+            <p>Descrição do Produto 3</p>
+            <a href="https://shopee.com.br/produto3" class="btn">Ver Produto</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Afiliados Shopee</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
