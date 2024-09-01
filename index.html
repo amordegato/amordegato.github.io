@@ -7,45 +7,47 @@
     <title>Amor de Gato - Produtos para Gatos</title>
     <style>
         body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-        }
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
 
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: #f53d2d;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            box-sizing: border-box;
-        }
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f53d2d;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 20px;
-        }
+header h1 {
+    margin: 0;
+    font-size: 20px;
+}
 
-        header .logo {
-            display: flex;
-            align-items: center;
-        }
+header .logo {
+    display: flex;
+    align-items: center;
+}
 
-        .logo img {
-            height: 50px; /* Ajuste o tamanho do GIF conforme necessário */
-            margin-right: 10px; /* Espaço entre o logo e o texto */
-        }
+.logo img {
+    height: 50px; /* Ajuste o tamanho do GIF conforme necessário */
+    margin-right: 10px; /* Espaço entre o logo e o texto */
+}
 
-        .menu-btn {
+
+
+.menu-btn {
             background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #7fff00, #00ff00, #00ff7f, #00ffff, #007fff, #0000ff, #7f00ff, #ff00ff, #ff007f);
             -webkit-background-clip: text;
             background-clip: text;
@@ -66,147 +68,148 @@
             animation: pulse 1.5s infinite;
         }
 
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-                box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
-            }
-            50% {
-                transform: scale(1.1);
-                box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-            }
-            100% {
-                transform: scale(1);
-                box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
-            }
-        }
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    }
+}
 
-        nav.menu {
-            display: none;
-            background-color: #f53d2d;
-            padding: 10px;
-            position: fixed;
-            top: 50px;
-            width: 100%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-            box-sizing: border-box;
-        }
+nav.menu {
+    display: none;
+    background-color: #f53d2d;
+    padding: 10px;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    box-sizing: border-box;
+}
 
-        nav.menu a {
-            color: white;
-            display: block;
-            padding: 10px;
-            text-decoration: none;
-            border-bottom: 1px solid #ddd;
-        }
+nav.menu a {
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+}
 
-        nav.menu a:hover {
-            background-color: #d4351c;
-        }
+nav.menu a:hover {
+    background-color: #d4351c;
+}
 
-        .container {
-            padding: 80px 20px 60px; /* Adjust padding for fixed header */
-        }
+.container {
+    padding: 80px 20px 60px; /* Adjust padding for fixed header */
+}
 
-        section.category {
-            margin-bottom: 40px;
-        }
+section.category {
+    margin-bottom: 40px;
+}
 
-        section.category h2 {
-            font-size: 22px;
-            color: #f53d2d;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #f53d2d;
-            padding-bottom: 10px;
-        }
+section.category h2 {
+    font-size: 22px;
+    color: #f53d2d;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f53d2d;
+    padding-bottom: 10px;
+}
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
-        }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
 
-        .box {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-        }
+.box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
 
-        .box img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            transition: transform 0.3s;
-        }
+.box img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
 
-        .box p {
-            margin: 10px 0;
-            font-weight: bold;
-            flex-grow: 1; /* Ensures that the description grows to fill the available space */
-        }
+.box p {
+    margin: 10px 0;
+    font-weight: bold;
+    flex-grow: 1; /* Ensures that the description grows to fill the available space */
+}
 
-        .box .btn {
-            margin-top: auto; /* Pushes the button to the bottom of the box */
-            display: inline-block;
-            padding: 10px 15px;
-            background-color: #f53d2d;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
+.box .btn {
+    margin-top: auto; /* Pushes the button to the bottom of the box */
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #f53d2d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
 
-        .box .btn:hover {
-            background-color: #d4351c;
-        }
+.box .btn:hover {
+    background-color: #d4351c;
+}
 
-        .box:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
-        .box img:hover {
-            transform: scale(1.1);
-        }
+.box img:hover {
+    transform: scale(1.1);
+}
 
-        footer {
-            background-color: #f53d2d;
-            color: white;
-            text-align: center;
-            padding: 15px 20px;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-            margin-top: 40px;
-        }
+footer {
+    background-color: #f53d2d;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+}
 
-        @media (max-width: 599px) {
-            .menu-btn {
-                display: block; /* Show menu button on small screens */
-            }
+@media (max-width: 599px) {
+    .menu-btn {
+        display: block; /* Show menu button on small screens */
+    }
 
-            .grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
-        @media (min-width: 600px) {
-            .grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
+@media (min-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
-        @media (min-width: 900px) {
-            .grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
+@media (min-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
     </style>
 </head>
 
@@ -215,8 +218,7 @@
     <header>
         <div class="logo">
             <img src="biju.gif" alt="Logo">
-            <h1>Amor de Gato</h1>
-        </div>
+        <h1>Amor de Gato</h1>
         <button class="menu-btn" onclick="toggleMenu()">☰</button>
     </header>
 
@@ -233,24 +235,24 @@
             <h2>Alimentação e Saúde</h2>
             <div class="grid">
                 <div class="box">
-                    <img src="https://via.placeholder.com/150" alt="Fonte de Água Automática">
-                    <p>Fonte de Água Automática</p>
-                    <a href="https://shopee.com.br/produto1" class="btn">Ver Produto</a>
+                    <img src="https://down-tx-br.img.susercontent.com/sg-11134201-7rdvf-lxksfvt0vy4q3a.webp" alt="Fonte de Água Automática">
+                    <p>Dispensador de água para gatos com elemento de filtro dispensador automático de água para animais de estimação sensor automático para cães bebedouro de água para gatos 2L</p>
+                    <a href="https://s.shopee.com.br/50FvVXDomK" class="btn">Ver Produto</a>
                 </div>
                 <div class="box">
-                    <img src="https://via.placeholder.com/150" alt="Ração Grain-Free">
-                    <p>Ração Grain-Free</p>
-                    <a href="https://shopee.com.br/produto2" class="btn">Ver Produto</a>
+                    <img src="https://down-tx-br.img.susercontent.com/br-11134207-7r98r-llwcuuao4egnbe.webp" alt="Ração Grain-Free">
+                    <p>Ração Fórmula Natural Vet Care Renal para Gatos Adultos com Doença Renal Crônica 1,5kg</p>
+                    <a href="https://s.shopee.com.br/2qBR4Vr3jE" class="btn">Ver Produto</a>
                 </div>
                 <div class="box">
-                    <img src="https://via.placeholder.com/150" alt="Suplementos de Ômega-3">
-                    <p>Suplementos de Ômega-3</p>
-                    <a href="https://shopee.com.br/produto3" class="btn">Ver Produto</a>
+                    <img src="https://down-cvs-br.img.susercontent.com/sg-11134201-7qvd7-lh4sd0hokqqs42.webp" alt="Suplementos de Ômega-3">
+                    <p>Hidrapet Ômega Suplemento Vitamínico Para Cães e Gatos 60cps</p>
+                    <a href="https://s.shopee.com.br/3VR7oeHL3C" class="btn">Ver Produto</a>
                 </div>
                 <div class="box">
-                    <img src="https://via.placeholder.com/150" alt="Pasta de Malte para Gatos">
-                    <p>Pasta de Malte para Gatos</p>
-                    <a href="https://shopee.com.br/produto4" class="btn">Ver Produto</a>
+                    <img src="https://down-cvs-br.img.susercontent.com/br-11134207-7r98q-lm517bbexbg7e2.webp" alt="Comedouro Elevado">
+                    <p>Comedouro Duplo Anti Formiga Pet Bebedouro automático suporte para Garrafa Comedouro - para cachorro gato coelho</p>
+                    <a href="https://s.shopee.com.br/4pwVPRUevp" class="btn">Ver Produto</a>
                 </div>
             </div>
         </section>
@@ -260,24 +262,29 @@
             <h2>Higiene e Limpeza</h2>
             <div class="grid">
                 <div class="box">
-                    <img src="https://via.placeholder.com/150" alt="Areia Higiênica">
-                    <p>Areia Higiênica</p>
-                    <a href="https://shopee.com.br/produto5" class="btn">Ver Produto</a>
+                    <img src="https://down-cvs-br.img.susercontent.com/f2b30b6adb57a4d7118fbbfcc2d2466f.webp" alt="Areia Sanitária de Cristais de Sílica">
+                    <p>Areia Higienica Micro Cristais Sílica 1,8kg Higiene P/ Gatos</p>
+                    <a href="https://s.shopee.com.br/VnWH0CYtg" class="btn">Ver Produto</a>
                 </div>
                 <div class="box">
-                    <img src="https://via.placeholder.com/150" alt="Shampoo Seco">
-                    <p>Shampoo Seco</p>
-                    <a href="https://shopee.com.br/produto6" class="btn">Ver Produto</a>
+                    <img src="https://down-tx-br.img.susercontent.com/br-11134201-7qukw-lfqvgfzak60vbd.webp" alt="Removedor de Odor Biológico">
+                    <p>Talco Matacura Antisséptico e Removedor de Odores - 100g</p>
+                    <a href="https://s.shopee.com.br/9pLB3KjlAW" class="btn">Ver Produto</a>
                 </div>
                 <div class="box">
-                    <img src="https://via.placeholder.com/150" alt="Removedor de Odores">
-                    <p>Removedor de Odores</p>
-                    <a href="https://shopee.com.br/produto7" class="btn">Ver Produto</a>
+                    <img src="https://down-tx-br.img.susercontent.com/sg-11134201-7qvd4-lfh7s6gbwyktb4.webp" alt="Shampoos Secos">
+                    <p>Kit 2 Shampoo a Seco para Cães e Gatos Pet Clean 500 ml</p>
+                    <a href="https://s.shopee.com.br/40NOSKPYT5" class="btn">Ver Produto</a>
                 </div>
                 <div class="box">
-                    <img src="https://via.placeholder.com/150" alt="Escova para Gatos">
-                    <p>Escova para Gatos</p>
-                    <a href="https://shopee.com.br/produto8" class="btn">Ver Produto</a>
+                    <img src="https://down-cvs-br.img.susercontent.com/br-11134207-7r98o-lxjx25fv1jsm9a.webp" alt="Escova de Desembaraçar">
+                    <p>Escova e Secador De Pelo 2 In 1 Escova Pente Pet Tosa Profissional Portatil Gato Cachorro</p>
+                    <a href="https://s.shopee.com.br/1B3D4Yk4zy" class="btn">Ver Produto</a>
+                </div>
+                <div class="box">
+                    <img src="https://down-cvs-br.img.susercontent.com/br-11134207-7r98o-lzj8hkv4qwjlb8.webp" alt="Escova de Desembaraçar">
+                    <p>Kit Higiene Para Gato Banheira Pa e Pote Conjunto Completo Para a Limpeza do Seu Ambiente Pet</p>
+                    <a href="https://s.shopee.com.br/1qItrcTyxp" class="btn">Ver Produto</a>
                 </div>
             </div>
         </section>
@@ -287,24 +294,29 @@
             <h2>Brinquedos e Enriquecimento</h2>
             <div class="grid">
                 <div class="box">
-                    <img src="https://via.placeholder.com/150" alt="Arranhador">
-                    <p>Arranhador</p>
-                    <a href="https://shopee.com.br/produto9" class="btn">Ver Produto</a>
+                    <img src="https://down-tx-br.img.susercontent.com/br-11134207-7r98o-lr5wwgbiq7gbce.webp" alt="Varinha com Penas">
+                    <p>Arranhador para Gatos Poste com Brinquedo - (P)</p>
+                    <a href="https://down-tx-br.img.susercontent.com/sg-11134201-7rbk0-lkv6tuhhvbf19c.webp" class="btn">Ver Produto</a>
                 </div>
                 <div class="box">
-                    <img src="https://via.placeholder.com/150" alt="Brinquedo Interativo">
-                    <p>Brinquedo Interativo</p>
-                    <a href="https://shopee.com.br/produto10" class="btn">Ver Produto</a>
+                    <img src="https://down-tx-br.img.susercontent.com/sg-11134201-7rbk0-lkv6tuhhvbf19c.webp" alt="Bolinha de Borracha">
+                    <p>5 Prateleiras Escada Para Gato peças playground Gatos</p>
+                    <a href="https://s.shopee.com.br/4fd4t1gFQV" class="btn">Ver Produto</a>
                 </div>
                 <div class="box">
-                    <img src="https://via.placeholder.com/150" alt="Bolinha com Catnip">
-                    <p>Bolinha com Catnip</p>
-                    <a href="https://shopee.com.br/produto11" class="btn">Ver Produto</a>
+                    <img src="https://down-br.img.susercontent.com/file/sg-11134201-22100-2w8lpgitkwiv97" alt="Arranhador Vertical">
+                    <p>Protetor de Sofá para Gatos Arranhador para Sofá Fibra Natural 40 cm</p>
+                    <a href="https://s.shopee.com.br/4VJefIGDOK" class="btn">Ver Produto</a>
                 </div>
                 <div class="box">
-                    <img src="https://via.placeholder.com/150" alt="Ponte de Madeira">
-                    <p>Ponte de Madeira</p>
-                    <a href="https://shopee.com.br/produto12" class="btn">Ver Produto</a>
+                    <img src="https://down-tx-br.img.susercontent.com/br-11134207-7r98o-lvoluctfysiube.webp" alt="Brinquedo Interativo">
+                    <p>Kit Brinquedo Túnel para Gatos - 3 Saídas com 22 Acessórios Inclusos</p>
+                    <a href="https://s.shopee.com.br/8KWNFPSEtS" class="btn">Ver Produto</a>
+                </div>
+                <div class="box">
+                    <img src="https://down-cvs-br.img.susercontent.com/d0b9059240f6de0f0c09b1d5c68dc071.webp" alt="Brinquedo Interativo">
+                    <p>Mini ratinho brinquedo para gatos 10 unidades cores sortidas</p>
+                    <a href="https://s.shopee.com.br/2qBR2lLtG9" class="btn">Ver Produto</a>
                 </div>
             </div>
         </section>
@@ -314,31 +326,31 @@
             <h2>Acessórios e Conforto</h2>
             <div class="grid">
                 <div class="box">
-                    <img src="https://via.placeholder.com/150" alt="Cama de Pelúcia">
-                    <p>Cama de Pelúcia</p>
-                    <a href="https://shopee.com.br/produto13" class="btn">Ver Produto</a>
+                    <img src="https://down-tx-br.img.susercontent.com/sg-11134201-7rbmh-llf5xaeewt8b63.webp" alt="Cama Aconchegante">
+                    <p>Cama Iglu Cachorro Gato Pet Impermeável Pequeno Porte</p>
+                    <a href="https://s.shopee.com.br/8KWNExzY30" class="btn">Ver Produto</a>
                 </div>
                 <div class="box">
-                    <img src="https://via.placeholder.com/150" alt="Coleira com Identificação">
-                    <p>Coleira com Identificação</p>
-                    <a href="https://shopee.com.br/produto14" class="btn">Ver Produto</a>
+                    <img src="https://down-cvs-br.img.susercontent.com/sg-11134201-7rbkp-looe1d8j5g25cf.webp" alt="Coleira Ajustável">
+                    <p>Coleira Peitoral para Gato Pet Ajustável com Guia 1,2m Colorido</p>
+                    <a href="https://s.shopee.com.br/10jmreVCpE" class="btn">Ver Produto</a>
                 </div>
                 <div class="box">
-                    <img src="https://via.placeholder.com/150" alt="Manta Térmica">
-                    <p>Manta Térmica</p>
-                    <a href="https://shopee.com.br/produto15" class="btn">Ver Produto</a>
+                    <img src="https://down-cvs-br.img.susercontent.com/br-11134207-7r98p-ll507wmotlbw8a.webp" alt="Cesta para Transporte">
+                    <p>Bolsa Transporte Cães E Gatos Mochila Avião Viagem Mala</p>
+                    <a href="https://s.shopee.com.br/qQMfTWfHO" class="btn">Ver Produto</a>
                 </div>
                 <div class="box">
-                    <img src="https://via.placeholder.com/150" alt="Transporte Dobrável para Gatos">
-                    <p>Transporte Dobrável para Gatos</p>
-                    <a href="https://shopee.com.br/produto16" class="btn">Ver Produto</a>
+                    <img src="https://down-cvs-br.img.susercontent.com/br-11134207-7r98o-lkpk6h9fy28jd5.webp" alt="Manta de Pelo">
+                    <p>Manta Pet Cobertor Pet Coberta para Cachorros Gatos Cães Manta Fofinha 1.0m x 0,7m</p>
+                    <a href="https://s.shopee.com.br/6ARt25NRXC" class="btn">Ver Produto</a>
                 </div>
             </div>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2023 Amor de Gato. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Amor de Gato. Todos os direitos reservados.</p>
     </footer>
 
     <script>
